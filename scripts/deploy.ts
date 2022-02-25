@@ -8,7 +8,7 @@ async function main() {
         deployer.address
     );
 
-    const Contract = await ethers.getContractFactory("TokenERC20");
+    const Contract = await ethers.getContractFactory("ERC20");
     const contract = await Contract.deploy();
 
     console.log("Contract deployed to:", contract.address);
